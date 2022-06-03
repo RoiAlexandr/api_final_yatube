@@ -48,3 +48,145 @@ python3 manage.py migrate
 ```
 python3 manage.py runserver
 ```
+
+
+
+Примеры запросов API
+
+Получение публикаций
+```
+GET /api/v1/posts/
+```
+Образец ответа
+```
+
+{
+    "id": 0,
+    "author": "string",
+    "text": "string",
+    "pub_date": "2019-08-24T14:15:22Z",
+    "image": "string",
+    "group": 0
+}
+```
+Создание публикации
+```
+POST /api/v1/posts/
+```
+Образец запроса
+```
+}
+    "text": "string",
+    "image": "string",
+    "group": 0
+}
+```
+Образец ответа
+```
+{
+    "id": 0,
+    "author": "string",
+    "text": "string",
+    "pub_date": "2019-08-24T14:15:22Z",
+    "image": "string",
+    "group": 0
+}
+```
+Обновление публикации
+```
+PUT /api/v1/posts/{id}/
+```
+Образец запроса
+```
+{
+    "text": "stringstring",
+    "image": "string",
+    "group": 0
+}
+```
+Образец ответа
+```
+{
+    "id": 0,
+    "author": "stringstring",
+    "text": "string",
+    "pub_date": "2019-08-24T14:15:22Z",
+    "image": "string",
+    "group": 0
+}
+```
+
+Образец запроса
+```
+{
+    "text": "anotherstring"
+}
+```
+Образец ответа
+```
+{
+    "id": 0,
+    "author": "stringstring",
+    "text": "anotherstring",
+    "pub_date": "2019-08-24T14:15:22Z",
+    "image": "string",
+    "group": 0
+}
+```
+Удаление публикации
+```
+DELETE /api/v1/posts/{id}/
+```
+Получение комментариев
+```
+GET /api/v1/posts/{post_id}/comments/
+```
+Образец ответа
+```
+[
+    {
+        "id": 0,
+        "author": "string",
+        "text": "string",
+        "created": "2019-08-24T14:15:22Z",
+        "post": 0
+    }
+]
+```
+Добавление комментария
+```
+POST /api/v1/posts/{post_id}/comments/
+```
+Образец запроса
+```
+{
+    "text": "string"
+}
+```
+Образец ответа
+```
+{
+    "id": 0,
+    "author": "string",
+    "text": "string",
+    "created": "2019-08-24T14:15:22Z",
+    "post": 0
+}
+```
+Получить JWT-токен
+```
+POST /api/v1/jwt/create/
+```
+Образец запроса
+```
+{
+    "username": "string",
+    "password": "string"
+}
+```
+Образец ответа
+```
+{
+    "refresh": "string",
+    "access": "string"
+```
