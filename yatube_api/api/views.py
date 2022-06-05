@@ -45,8 +45,8 @@ class GroupViewSet(viewsets.ModelViewSet):
         return Response(status=status.HTTP_405_METHOD_NOT_ALLOWED)
 
 
-class CreateListViewSet(mixins.CreateModelMixin, 
-                        mixins.ListModelMixin, 
+class CreateListViewSet(mixins.CreateModelMixin,
+                        mixins.ListModelMixin,
                         viewsets.GenericViewSet):
     pass
 
