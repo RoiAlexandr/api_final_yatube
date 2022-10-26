@@ -1,10 +1,10 @@
 ### Описание
 API для взаимодействия с Yatub (https://github.com/RoiAlexandr/hw05_final.git) представляет собой проект социальной сети в которой реализованы следующие возможности: публиковать записи, комментировать записи, а так же подписываться или отписываться от авторов.
 
-## Стек технологий
-![Python](https://img.shields.io/badge/-Python-464646?style=flat-square&logo=Python)](https://www.python.org/)
+### Стек технологий
+[![Python](https://img.shields.io/badge/-Python-464646?style=flat&logo=Python&logoColor=56C0C0&color=008080)](https://www.python.org/)
 [![Django](https://img.shields.io/badge/-Django-464646?style=flat-square&logo=Django)](https://www.djangoproject.com/)
-[![Django REST Framework](https://img.shields.io/badge/-Django%20REST%20Framework-464646?
+[![Django REST Framework](https://img.shields.io/badge/-Django%20REST%20Framework-464646?style=flat&logo=Django%20REST%20Framework&logoColor=56C0C0&color=008080)](https://www.django-rest-framework.org/)
 [![JWT](https://img.shields.io/badge/-JWT-464646?style=flat&color=008080)](https://jwt.io/)
 [![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-464646?style=flat&logo=PostgreSQL&logoColor=56C0C0&color=008080)](https://www.postgresql.org/)
 
